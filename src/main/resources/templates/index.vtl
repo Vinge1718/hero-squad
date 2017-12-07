@@ -1,18 +1,34 @@
 <h2>Hero Squad!</h2>
+#if ($hero)
+    <p>Heroes added so far</p>
+    <p>$hero.getName()</p>
+    <ul>
+        <li>$hero.getAge()</li>
+        <li>$hero.getPower()</li>
+        <li>$hero.getWeakness()</li>
+    </ul>
+#else
+    <p>No new Heroes!</p>
+#end
+
 <p>Add a new Hero:</p>
 
 <form action="/heroes" method="post">
     <label for="name">Heros Name</label>
     <input id="name" name="name" type="text">
+    <br>
 
     <label for="age">Heros Age</label>
     <input id="age" name="age" type="text">
+    <br>
 
     <label for="power">Heros Powers</label>
     <input id="power" name="power" type="text">
+    <br>
 
     <label for="weakness">Heros Weakness</label>
     <input id="weakness" name="weakness" type="text">
+    <br>
 
     <button type="submit" class="btn btn-default"> Add a Hero</button>
 </form>
