@@ -1,11 +1,17 @@
 <h2>Hero Squad!</h2>
-#if ($hero)
+#if ($heroes)
     <p>Heroes added so far</p>
-    <p>$hero.getName()</p>
     <ul>
-        <li>$hero.getAge()</li>
-        <li>$hero.getPower()</li>
-        <li>$hero.getWeakness()</li>
+        #foreach ($hero in $heroes)
+        <li>
+            <p>$hero.getName()</p>
+            <ul>
+                <li>$hero.getAge()</li>
+                <li>$hero.getPower()</li>
+                <li>$hero.getWeakness()</li>
+            </ul>
+        </li>
+        #end
     </ul>
 #else
     <p>No new Heroes!</p>
