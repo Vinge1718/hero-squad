@@ -7,4 +7,11 @@ public class HeroTest{
         Hero myHero = new Hero("Omni-man", "24", "Ever Present", "Easily Overwhelmed");
         assertEquals(true, myHero instanceof Hero);
     }
+/*
+    @Test
+    public void Hero_instantiatesWithProperties_String(){
+        Hero myHero = new Hero("Omni-man", "24", "Ever Present", "Easily Overwhelmed");
+        assertEquals(("Omni-man", "24", "Ever Present", "Easily Overwhelmed"), ((myHero.getName()),(myHero.getAge()), (myHero.getPower()), (myHero.getWeakness())));
+    }
+    */
 }
