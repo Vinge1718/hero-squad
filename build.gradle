@@ -3,6 +3,7 @@ apply plugin: 'application'
 
 archivesBaseName = "hero-squad"
 version = "1.0"
+applicationName = "hero-squad"
 mainClassName = "App"
 
 repositories{
@@ -14,3 +15,6 @@ compile group: "com.sparkjava", name: "spark-core", version: "2.7.1"
 compile group: "org.apache.velocity", name:"velocity", version:"1.7"
 testCompile group: "junit", name:"junit", version:"4.+"
 }
+
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installApp'])
