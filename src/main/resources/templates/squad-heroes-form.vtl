@@ -1,0 +1,22 @@
+<div class="form-style-2">
+<div class="form-style-2-heading">Add a new Hero to $squad.getName()</div>
+
+    <form action="/heroes" method="post">
+
+        <input id="squadId" name="squadId" type="hidden" value="$squad.getId()">
+
+        <label for="name"><span>Heros Name <span class="required">*</span></span><input type="text" class="input-field" name="name" id="name"/></label>
+        <br>
+
+        <label for="age"><span>Heros Age <span class="required">*</span></span><input type="text" class="input-field" id="age" name="age" /></label>
+        <br>
+
+        <label for="power"><span>Heros Powers <span class="required">*</span></span><input type="text" class="input-field" id="power" name="power" /></label>
+        <br>
+
+        <label for="weakness"><span>Heros Weakness <span class="required">*</span></span><input type="text" class="input-field" id="weakness" name="weakness" /></label>
+        <br>
+
+        <button type="submit" class="btn btn-default" id="btn"> Add a Hero</button>
+    </form>
+</div>
