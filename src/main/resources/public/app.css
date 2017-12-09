@@ -5,3 +5,10 @@ body{
   height: 100%;
   width: auto;
 }
+
+.container{
+    margin-top: 20%;
+    background-color: #bdbec1;
+    padding: 25px 50px;
+    opacity: 0.9;
+}
