@@ -1,40 +1,5 @@
-<h2>Hero Squad!</h2>
-#if ($heroes)
-    <p>Heroes added so far</p>
-    <ul>
-        #foreach ($hero in $heroes)
-        <li>
-            <p>$hero.getName()</p>
-            <ul>
-                <li>$hero.getAge()</li>
-                <li>$hero.getPower()</li>
-                <li>$hero.getWeakness()</li>
-            </ul>
-        </li>
-        #end
-    </ul>
-#else
-    <p>No new Heroes!</p>
-#end
+<h2>Welcome to the Hero-Squad Application</h2>
 
-<p>Add a new Hero:</p>
-
-<form action="/heroes" method="post">
-    <label for="name">Heros Name</label>
-    <input id="name" name="name" type="text">
-    <br>
-
-    <label for="age">Heros Age</label>
-    <input id="age" name="age" type="text">
-    <br>
-
-    <label for="power">Heros Powers</label>
-    <input id="power" name="power" type="text">
-    <br>
-
-    <label for="weakness">Heros Weakness</label>
-    <input id="weakness" name="weakness" type="text">
-    <br>
-
-    <button type="submit" class="btn btn-default"> Add a Hero</button>
-</form>
+<a href="/heroes/new">Add a new hero</a>
+<br>
+<a href="/heroes"> View all current heroes</a>
