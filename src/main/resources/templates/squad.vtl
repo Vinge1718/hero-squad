@@ -1,0 +1,17 @@
+<h3>The $squad.getName() squad will uphold: $squad.getCause(). as a cause</h3>
+<div id="hero-details">
+    <ul>
+        #foreach($hero in $squad.getHeroes())
+        <li>$hero.getName()</li>
+        <li>$hero.getPower()</li>
+        <li>$hero.getWeakness()</li>
+        <li>$hero.getAge()</li>
+        <hr>
+        #end
+    </ul>
+</div>
+
+<br>
+<a href="/squads/$squad.getId()/heroes/new">Add new hero</a>
+<br>
+<a href="/squads">All Squads!</a>
