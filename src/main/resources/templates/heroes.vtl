@@ -1,0 +1,12 @@
+<h2>Hero Squad!</h2>
+#if ($heroes)
+    <p>Heroes added so far</p>
+    <ul>
+        #foreach ($hero in $heroes)
+        <li> <a href="/heroes/$hero.getId()">$hero.getName()</a> </li>
+        #end
+    </ul>
+#else
+    <p>No new Heroes!</p>
+#end
+<a href="/heroes/new">Add new Hero</a>
