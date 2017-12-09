@@ -1,11 +1,11 @@
-<h3>The $squad.getName() squad will uphold: $squad.getCause(). as a cause</h3>
+<h3>The $squad.getName() squad uphold: $squad.getCause() as their guiding principle.</h3>
 <div id="hero-details">
     <ul>
         #foreach($hero in $squad.getHeroes())
-        <li>$hero.getName()</li>
-        <li>$hero.getPower()</li>
-        <li>$hero.getWeakness()</li>
-        <li>$hero.getAge()</li>
+        <li><span class="heroDisplay">Heros Name:</span>$hero.getName()</li>
+        <li><span class="heroDisplay">Ability:</span>$hero.getPower()</li>
+        <li><span class="heroDisplay">Weakness:</span>$hero.getWeakness()</li>
+        <li><span class="heroDisplay">Age: </span>$hero.getAge()</li>
         <hr>
         #end
     </ul>
