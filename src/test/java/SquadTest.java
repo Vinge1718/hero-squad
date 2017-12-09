@@ -15,4 +15,12 @@ public class SquadTest{
     assertEquals("Vengence for the weak", testSquad.getCause());
     assertEquals("Avengers", testSquad.getName());
   }
+
+  @Test
+  public void all_returnAllInstancesofSquad_true(){
+      Squad firstSquad = new Squad("Avengers", "vengence for the weak");
+      Squad secondSquad = new Squad("Justice-League", "Argue on behalf of the weak");
+      assertEquals(true, Squad.all().contains(firstSquad));
+      assertEquals(true, Squad.all().contains(secondSquad));
+  }
 }
