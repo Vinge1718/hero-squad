@@ -68,6 +68,12 @@ input.input-field{
     background-color: #4CAF50; /* Green */
     color: white;
 }
+
+#hero-details{
+    column-count: 2;
+    column-gap: 2px;
+    column-rule: 1px solid #968585;
+}
 /*
 #homePage{
     column-count: 2;
