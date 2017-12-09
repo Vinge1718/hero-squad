@@ -21,11 +21,11 @@ public class HeroTest{
         Hero.clear();
         assertEquals(Hero.all().size(), 0);
     }
-/*
+
     @Test
-    public void Hero_instantiatesWithProperties_String(){
-        Hero myHero = new Hero("Omni-man", "24", "Ever Present", "Easily Overwhelmed");
-        assertEquals(("Omni-man", "24", "Ever Present", "Easily Overwhelmed"), ((myHero.getName()),(myHero.getAge()), (myHero.getPower()), (myHero.getWeakness())));
+    public void find_returnsHeroWithSameId_secondHero() {
+      Hero myHero = new Hero("Omni-man", "24", "Ever Present", "Easily Overwhelmed");
+      Hero mySecondHero = new Hero("Imort-man", "1123", "survivor", "bored");
+      assertEquals(Hero.find(mySecondHero.getId()), mySecondHero);
     }
-    */
 }
